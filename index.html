@@ -4,21 +4,7 @@
 	<style>
 		body {
 			text-align: center;
-			font-size: 3vmin;
 		}
-
-		h1 {
-			font-size: 5.9vw;
-		}
-
-		h2 {
-			font-size: 3.0vh;
-		}
-
-		p {
-			font-size: 3vmin;
-		}
-
 		.in-middle {
 			position: absolute;
 			top: 50%;
@@ -196,32 +182,32 @@
 <body onload="hideGameElements()"
 	style="background: rgba(12, 12, 12, 0.877); color: blanchedalmond; font-family: 'Courier New', Courier, monospace;">
 	<div id="home" class="in-middle">
-		<h1>Mind Reader</h1>
-		<p>This is a mind reading game, where you will be shown a list of numbers in which you have to pick one. Then,
+		<h1 style="font-size: 10vmin;">Mind Reader</h1>
+		<p style="font-size: 4vmin;">This is a mind reading game, where you will be shown a list of numbers in which you have to pick one. Then,
 			we can predict the number you have picked by asking you few questions. Please be honest to answer the
 			questions to correctly predict the result.</p>
-		<button onclick="displayMainList()" class="button">Let's Play!</button>
+		<button onclick="displayMainList()" class="button" style="font-size: 4vmin;">Let's Play!</button>
 	</div>
 	<div id="pickScreen" class="screen">
-		<p>Please pick a number from the list and remember it!</p>
+		<p style="font-size: 4vmin;">Please pick a number from the list and remember it!</p>
 		<div id="mainArr"></div>
-		<button class="button" id="pickedConformationButton" onclick="startProcess()">I Picked!</button>
+		<button class="button" id="pickedConformationButton" style="font-size: 4vmin;" onclick="startProcess()">I Picked!</button>
 	</div>
 	<div id="columnSelectionScreen" class="screen">
-		<p>Please choose the set of numbes that has your picked number! Make sure to choose it right. Else, the result
+		<p style="font-size: 4vmin;">Please choose the set of numbes that has your picked number! Make sure to choose it right. Else, the result
 			will go wrong.</p>
 		<h4><u>you will be asked 3 times!</u></h4>
 		<div id="promptToSelect" style="color: #ff6666;">Please Choose!</div>
 		<div id="listCols">
-			<div id="list1" onclick="progress('l1')" class="colElems"></div>
-			<div id="list2" onclick="progress('l2')" class="colElems"></div>
-			<div id="list3" onclick="progress('l3')" class="colElems"></div>
+			<div id="list1" onclick="progress('l1')" class="colElems" style="font-size: 4vmin;"></div>
+			<div id="list2" onclick="progress('l2')" class="colElems" style="font-size: 4vmin;"></div>
+			<div id="list3" onclick="progress('l3')" class="colElems" style="font-size: 4vmin;"></div>
 		</div>
 	</div>
 	<div id="resultScreen" class="screen">
-		<span>you picked number is</span>
-		<div id="result" style="font-size: 100; padding-top: 20px;"></div>
-		<button class="button" onclick="displayMainList()">Replay</button>
+		<span style="font-size: 4vmin;">you picked number is</span>
+		<div id="result" style="font-size: 10vmin; padding-top: 20px;"></div>
+		<button class="button" onclick="displayMainList()" style="font-size: 4vmin;">Replay</button>
 	</div>
 
 </body>
